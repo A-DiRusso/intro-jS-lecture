@@ -23,3 +23,11 @@ function nameDefault(name) {
 nameDefault();
 nameDefault(reply);
 
+// Write a function that will return a Madlib with given input
+
+function madLib(name, subject) {
+    console.log(`${name}'s favorite subject is ${subject}`);
+}
+
+const subject = "art!";
+madLib(reply, subject);
