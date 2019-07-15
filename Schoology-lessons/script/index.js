@@ -52,6 +52,24 @@ function totalBill(amount, tip) {
 }
 
 let tip = tipAmount(100, "good");
+let splitTip = tipAmount(40, "fair");
 
 console.log(`The total bill is $${totalBill(100, tip)}`);
 console.log(`The total bill is $${totalBill(40, tip)}`);
+
+// Write a function that splits the total bill among the number of guests
+function splitAmount(total, guest) {
+    return total / guest;
+}
+// function splitAmount(total, guest) {
+//     return total / guest;
+// }
+
+// let total = totalBill(100, 20);
+// let split = totalBill(40, 15)
+
+let total = totalBill(100, tip);
+let splitTotal = totalBill(40, splitTip);
+
+console.log(`The split amount is $${splitAmount(total, 5)}`)
+console.log(`The split amount is $${splitAmount(splitTotal, 2)}`)
