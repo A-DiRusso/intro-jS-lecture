@@ -74,8 +74,8 @@ let splitTotal = totalBill(40, splitTip);
 console.log(`The split amount is $${splitAmount(total, 5)}`)
 console.log(`The split amount is $${splitAmount(splitTotal, 2)}`)
 
-// lecture turnary functions
-const x = 1;
+// lecture turnary and switch functions
+const x = 2;
 
 if (x===1) {
     y = 2;
@@ -83,6 +83,45 @@ if (x===1) {
     y = 0;
 }
 
-console.log(`y = ${y}`);
+console.log(`If else: Y = ${y}`);
 
-console.log(`y = ${x === 1 ? y = 2 : y = 0}`);
+console.log(`Turnary: Y = ${x === 1 ? y = 2 : y = 0}`);
+
+const z = (x === 1) 
+    ? 2
+    : (x===2)
+        ? 4
+        : (x === 3)
+            ? 6
+            : 0;
+
+console.log(`Nested Turnary: Z = ${z}`) 
+
+switch(x) {
+    case 1:
+        a = 2;
+        break;
+    case 2:
+        a = 4;
+        break;
+    case 3:
+        a = 6;
+        break;
+    default:
+        a = 0;
+}
+
+console.log(`Switch Case: A = ${a}`);
+
+// 3 ways to write a function: 
+function myFunc1(param1){
+    //code here
+}
+
+const myFunc2 = function(param1) {
+    // code here
+};
+
+const myFunc3 = (param1) => {
+    // code here
+};
