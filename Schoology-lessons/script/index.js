@@ -43,5 +43,15 @@ function tipAmount(amount, service) {
     }
 }
 
-console.log(tipAmount(100, "good"));
-console.log(tipAmount(40, "fair"));
+console.log(`The tip amount is $${tipAmount(100, "good")}`);
+console.log(`The tip amount is $${tipAmount(40, "fair")}`);
+
+// Write a function that takes tipAmount's return and returns the total bill
+function totalBill(amount, tip) {
+    return amount + tip;
+}
+
+let tip = tipAmount(100, "good");
+
+console.log(`The total bill is $${totalBill(100, tip)}`);
+console.log(`The total bill is $${totalBill(40, tip)}`);
