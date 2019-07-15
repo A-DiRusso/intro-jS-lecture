@@ -73,3 +73,16 @@ let splitTotal = totalBill(40, splitTip);
 
 console.log(`The split amount is $${splitAmount(total, 5)}`)
 console.log(`The split amount is $${splitAmount(splitTotal, 2)}`)
+
+// lecture turnary functions
+const x = 1;
+
+if (x===1) {
+    y = 2;
+} else {
+    y = 0;
+}
+
+console.log(`y = ${y}`);
+
+console.log(`y = ${x === 1 ? y = 2 : y = 0}`);
