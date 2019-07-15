@@ -31,3 +31,17 @@ function madLib(name, subject) {
 
 const subject = "art!";
 madLib(reply, subject);
+
+// Write function tipAmount(amount, service) that will return the total based on level of service
+function tipAmount(amount, service) {
+    if (service === "good") {
+        return amount * 0.2;
+    } else if (service === "fair") {
+        return amount * 0.15;
+    } else if (service === "bad") {
+        return amount * 0.1;
+    }
+}
+
+console.log(tipAmount(100, "good"));
+console.log(tipAmount(40, "fair"));
